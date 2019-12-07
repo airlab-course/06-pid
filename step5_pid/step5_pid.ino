@@ -88,6 +88,7 @@ void loop() {
 
     if (millis() - previous_command_time > command_period) {
         driver.stop();
+        delay(50);
         command = song[command_pointer][0] * 0.4;
         command_period = song[command_pointer][1] * 1000;
         regulator.setTargetSpeed(command);

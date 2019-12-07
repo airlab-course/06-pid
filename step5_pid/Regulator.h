@@ -35,7 +35,7 @@ public:
     }
 
 private:
-    PID pid_ = PID(0, 0, 00);
+    PID pid_ = PID(0, 0, 0);
 
     double prev_action_ = 0;
     int target_speed_ = 0;
